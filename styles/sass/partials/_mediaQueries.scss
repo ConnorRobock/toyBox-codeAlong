@@ -1,0 +1,64 @@
+//breakpoint at 1000/800/500px
+
+@media (max-width: 1000px) {
+    //category section
+    .categoryList .item {
+        padding: 20px;
+    }
+
+    //footer
+    .footerFlexContainer {
+        flex-direction: column;
+        align-items: center;
+        .footerNav {
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-width: 800px) {
+//header
+    header .wrapper {
+        flex-direction: column;
+        .headerImgContainer {
+            width: 100%;
+        }
+        img {
+            max-height: 350px;
+            object-fit: cover;
+            width: 100%; //as the height shrinks so will the width, so by adding a width the img will still fit 100% of the container while it shrinks
+        }
+        
+    }
+//Category section
+    .categoryList .item {
+        padding: 15px;
+    }
+
+//play section
+    .play .wrapper .playContainer {
+        width: 100%;
+        padding: 15px;
+    }
+
+}
+
+@media (max-width: 500px) {
+//category
+    .categoryList .item {
+        width: 100%;
+    }
+
+//play section
+        .play .wrapper .playContainer {
+        padding: 10px 10px 15px;
+    }
+
+//footer 
+    .footerNav nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    //Need to set typographical settings still, maybe do this?
+}
