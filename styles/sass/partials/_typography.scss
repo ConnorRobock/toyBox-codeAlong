@@ -1,22 +1,22 @@
 // font families
 @font-face {
     font-family: "Jakarta Sans";
-    src: url('../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff'),
-        url('../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf'),
-        url('../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2');
+    src: url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff),
+        url(../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Regular.ttf),
+        url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Regular.woff2);
 }
 /* importing Jakarta Sans font in bold */
 @font-face {
     font-family: "Jakarta Sans";
-    src: url('../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff'),
-        url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2"),
-        url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf");
+    src: url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff),
+        url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2),
+        url(../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf);
     font-weight: bold;
 }
 // importing Young Sarif fonts//
 @font-face {
-    font-family: "Young Sarif";
-    src: url("../fonts/youngserif/YoungSerif-Regular.otf");
+    font-family: "Young Serif";
+    src: url(../fonts/youngserif/YoungSerif-Regular.otf);
 }
 
 html {
@@ -74,5 +74,12 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.smallCopy {
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2rem;
 }
 
