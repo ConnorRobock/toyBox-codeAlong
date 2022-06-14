@@ -375,6 +375,7 @@ section {
   border-top: 1px solid rgba(8, 75, 109, 0.08);
   border-bottom: 1px solid rgba(8, 75, 109, 0.08);
   background-color: #fff;
+  z-index: 10;
 }
 .navBar .wrapper {
   display: -webkit-box;
@@ -494,4 +495,44 @@ header .wrapper {
 
 .textContainer {
   width: 48%;
+}
+
+.categoryList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.categoryList .item1 {
+  background-color: #ffd698;
+}
+.categoryList .item2 {
+  background-color: #f4fcff;
+}
+.categoryList .item3 {
+  background-color: #f8fbf3;
+}
+.categoryList .item4 {
+  background-color: #fff5f5;
+}
+.categoryList .item {
+  border-radius: 10%;
+  margin: 50px 25px 25px;
+  padding: 40px;
+  width: calc(45% - 50px);
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.categoryList .item img {
+  border-radius: 10%;
+  margin-bottom: 15px;
+}
+.categoryList .item:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
