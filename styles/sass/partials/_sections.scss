@@ -53,6 +53,7 @@
     background-size: cover;
     //These are basic background img styles. Generally used with all background images
     min-height: 90vh;
+    margin-bottom: 0;
     .wrapper {
         display: flex;
         justify-content: center;
@@ -65,7 +66,7 @@
             padding: 60px;
             text-align: center;
             //still need to add styling for h3 inside playContainer, possible some other styling for typographical elements inside as well
-            }
         }
+        
     }
 }
