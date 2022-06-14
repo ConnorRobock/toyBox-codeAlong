@@ -1,0 +1,20 @@
+header {
+    background-color: $tertiary;
+}
+
+header .wrapper {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerImgContainer {
+    width: 48%; //could flex-basis be used as well? Flex-basis is equivilant to width when the flex-direction is row. So flex-basis will adjust the size of the content along the main axis (and %'s only work on height when the parent element has a "set" height on it
+}
+
+.textContainer {
+    width: 48%;
+}
+

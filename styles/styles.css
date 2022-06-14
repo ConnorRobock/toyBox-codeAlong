@@ -306,6 +306,7 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 img {
@@ -395,7 +396,7 @@ section {
   left: 0;
 }
 
-.menuButton {
+label {
   cursor: pointer;
 }
 
@@ -467,4 +468,30 @@ section {
 .menuClose {
   color: #fff;
   font-size: 1.2rem;
+}
+
+header {
+  background-color: #f8fbf3;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerImgContainer {
+  width: 48%;
+}
+
+.textContainer {
+  width: 48%;
 }
