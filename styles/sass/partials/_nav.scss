@@ -19,13 +19,13 @@
     padding: 10px 0;
 }
 
-//nav bar
+//Nav Bar
 
 .navBar {
     position: sticky;
     top: 0;
-    border-top: 1px solid rgba(8, 75, 109, 00);
-    border-bottom: 1px solid rgba(8, 75, 109, 00);
+    border-top: 1px solid rgba(8, 75, 109, 0.08);
+    border-bottom: 1px solid rgba(8, 75, 109, 0.08);
     background-color: $solidWhite;
 
     .wrapper {
@@ -37,7 +37,17 @@
     input[type=checkbox]{
         opacity: 0;
         position: absolute;
+        &:checked ~ .slideOutNav {
+            //don't want to target the check box, by using ~ we can target a sibling element, in this case the slideOutNav
+            left: 0;
+        }
     }
+}
+
+//Search Cart
+
+.menuButton {
+    cursor: pointer; //will change the cursor to a finger pointer when hovering over this icon
 }
 
 .searchCart {
@@ -45,10 +55,7 @@
     .menuIcon, .bag {
         margin-right: 15px;
     }
-    .menuIcon {
-        background-color: $solidWhite;
-        border: none;
-    }
+
     .bag{
         display: flex;
     }
@@ -71,5 +78,40 @@
 
 .slideOutNav {
     background-color: $primary;
+    position: fixed;
+    top: 0;
+    left: -506px; 
+    width: 100%;
+    height: 100vh;
+    max-width: 506px;
+    color: $solidWhite;
+    padding: 35px 50px;
+    transition: 0.75s;
+}
+
+.mainMenu {
+    a {
+        font-family: $headingFont;
+        font-size: 1, 6rem;
+        line-height: 2.5rem;
+        color: rgba($color: $solidWhite, $alpha: 1); //color and opacity
+        transition: 0.3;
+        &:hover, &:focus {
+            color: rgba($color: $solidWhite, $alpha: 0.5);
+        }
+    }
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuClose {
+    color: $solidWhite;
+    font-size: 1.2rem;
+    //text-align: right;
+    // display: block; //made this a block level element to give it the space to align to the right of the menu, however using display: flex and justify-content: flex-end will work as well (This is what we eneded up doing) 
+    //width: 100%;
 }
 
