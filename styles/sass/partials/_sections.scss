@@ -1,3 +1,8 @@
+//Categories
+.categories {
+    margin-top: 20px;
+}
+
 .categoryList {
     display: flex;
     flex-wrap: wrap;
@@ -38,4 +43,29 @@
 
     }
 
+}
+
+//Let them play
+
+.play {
+    background-image: url(../assets/background-image.jpg);
+    background-position: center;
+    background-size: cover;
+    //These are basic background img styles. Generally used with all background images
+    min-height: 90vh;
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: inherit; //added height so allow flex to justify-content, the original height was only as big as the contents from the elements inside it
+        .playContainer {
+            width: 60%;
+            border: 24px solid $secondary;
+            background-color: $solidWhite;
+            padding: 60px;
+            text-align: center;
+            //still need to add styling for h3 inside playContainer, possible some other styling for typographical elements inside as well
+            }
+        }
+    }
 }
