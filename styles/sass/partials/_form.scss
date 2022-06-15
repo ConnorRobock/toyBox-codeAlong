@@ -1,0 +1,67 @@
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 90px auto;
+    max-width: 1000px; //added to help reduce the large width of the forms (when using large screens)
+}
+
+input,
+textarea {
+    border: none;
+    font-family: $bodyFont;
+    color: #333;
+    padding: 0 0 10px 5px;
+    margin-bottom: 40px;
+    &::placeholder {
+        font-size: 0.8rem;
+        color: $primary;
+        opacity: 1;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+    &:focus {
+        border-bottom: 1px soild $primary;
+        outline: none;
+    }
+}
+
+input {
+    border-bottom: 1px solid #eee;
+}
+
+textarea {
+    border: 1px solid #eee;
+    border-top: none;
+}
+//do not forget you need to strip the base styles on the drop down menu in order to udpate the styling 
+select {
+    appearance: none; //used to remove default styles
+    border: none; //used to remove defauly
+    font-family: $bodyFont;
+    color: $primary;
+    font-size: 0.8rem;
+    background-color: $solidWhite;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    background-image: url(../assets/caret-down-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 0;
+    
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    
+    label {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+
+    input {
+        accent-color: $primary;
+    };
+}
